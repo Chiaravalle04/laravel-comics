@@ -99,6 +99,57 @@ header {
     }
 }
 
+// Footer
+footer {
+    .header-footer{
+        height: 150px;
+        background-color: $firstColor;
+        .item-bar-footer {
+            img {
+                width: 50px;
+            }
+            h3 {
+                text-transform: uppercase;
+                margin-left: 10px;
+                font-size: 13px;
+                color: $secondColor;
+            }
+        }
+    }
+    .main-footer {
+        background-image: url('../img/footer-bg.jpg');
+        .links {
+            padding: 50px 0;
+            .link-left, .link-center, .link-rigth {
+                margin-right: 40px;
+                h2 {
+                    color: $secondColor;
+                }
+                li {
+                    margin-top: 5px;
+                }
+                a {
+                    color: gray;
+                    font-size: 14px;
+                }
+            }
+            .link-left {
+                .shop-title {
+                    margin-top: 20px;
+                }
+            }
+        }
+        .img-footer {
+            width: 700px;
+            height: 400px;
+            background-image: url('../img/dc-logo-bg.png');
+            background-position: center;
+            background-size: 600px;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
 // /comics --> Main
 main {
     background-color: $thirdColor;
