@@ -11,7 +11,32 @@
 // General Rules
 .main-container {
     width: 80%;
+    height: 100%;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-space-b {
+    justify-content: space-between;
+}
+
+.ai-center {
+    align-items: center;
 }
 
 // Header
@@ -30,10 +55,42 @@ header {
     }
     .second-section-header {
         height: 90px;
-        background-color: grey;
+        background-color: $secondColor;
         img {
             width: 70px;
             height: 70px;
         }
+        ul {
+            a {
+                padding: 31px 15px;
+                color: $thirdColor;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 13px;
+                // border-bottom: 5px solid $firstColor;
+            }
+        }
+        #search-bar {
+            position: relative;
+            display: block;
+            height: 40px;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 3px solid $firstColor;
+            &:focus {
+                outline: none;
+            }
+            &::placeholder {
+                color: $thirdColor;
+                font-weight: bold;
+                text-align: end;
+            }
+        }
+    }
+    .jumbo-section-header {
+        height: calc(60vh - 110px);
+        background-image: url('../img/jumbotron.jpg');
+        background-size: cover;
     }
 }

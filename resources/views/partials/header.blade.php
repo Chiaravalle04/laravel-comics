@@ -14,15 +14,19 @@
 
     <section class="second-section-header">
 
-        <div class="main-container">
+        <div class="main-container d-flex jc-space-b ai-center">
 
-            <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
+            <a href="#">
+
+                <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
+
+            </a>
 
             <nav>
 
-                <ul>
+                <ul class="d-flex">
 
-                    @foreach ($navBar as $link)
+                    @foreach ($links as $link)
                         
                     <li>
 
@@ -36,12 +40,13 @@
 
             </nav>
 
+            <input type="search" name="search-bar" id="search-bar" placeholder="Search">
+
         </div>
         
     </section>
 
-    <section class="jumbo-section-header">
-
+    <section class="jumbo-section-header d-flex jc-center ai-center">
 
         
     </section>

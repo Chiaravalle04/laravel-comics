@@ -28,5 +28,7 @@ Route::get('/', function () {
         'shop',
     ];
 
-    return view('welcome', $navBar);
+    return view('welcome', [
+        'links' => $navBar
+    ]);
 });
