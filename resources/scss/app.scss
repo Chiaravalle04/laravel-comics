@@ -1,5 +1,39 @@
 @import './partials/reset';
+@import './partials/variables';
 
-body {
-    background-color: red;
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+// General Rules
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+// Header
+header {
+    .first-section-header {
+        height: 20px;
+        background-color: $firstColor;
+        text-align: end;
+        span {
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 20px;
+            margin-left: 40px;
+            color: $secondColor;
+        }
+    }
+    .second-section-header {
+        height: 90px;
+        background-color: grey;
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
 }
