@@ -18,9 +18,13 @@
     </head>
     <body>
 
-        @include('partials.header')
+        @include('partials.header') <!--Header-->
        
-        @include('partials.footer')
+
+        @yield('main-comics') <!-- Main -- /comics -->
+
+
+        @include('partials.footer') <!--Footer-->
         
     </body>
 </html>

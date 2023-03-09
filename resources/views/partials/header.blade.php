@@ -16,7 +16,7 @@
 
         <div class="main-container d-flex jc-space-b ai-center">
 
-            <a href="#">
+            <a href="{{ route('home') }}">
 
                 <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
 

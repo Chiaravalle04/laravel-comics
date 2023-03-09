@@ -31,4 +31,28 @@ Route::get('/', function () {
     return view('welcome', [
         'links' => $navBar
     ]);
-});
+})->name('home');
+
+Route::get('/comics', function () {
+
+    $navBar = [
+        'characters',
+        'comics',
+        'movies',
+        'tv',
+        'games',
+        'collectibles',
+        'videos',
+        'fans',
+        'news',
+        'shop',
+    ];
+
+    $data = config('comics');
+
+    return view('comics', [
+        'superHero' => $data ], [
+            'links' => $navBar
+        ]
+    );
+})->name('comics');
